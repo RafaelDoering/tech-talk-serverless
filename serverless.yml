@@ -4,14 +4,16 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs14.x
+  environment:
+    MERCADO_PAGO_ACCESS_TOKEN: <PUT-YOUR-ACCESS-TOKEN-HERE>
 
 plugins:
   - serverless-offline
 
 functions:
-  hello:
-    handler: handler.hello
+  createPix:
+    handler: src/adapters/create-pix.handler
     events:
       - httpApi:
           path: /
-          method: get
+          method: post
