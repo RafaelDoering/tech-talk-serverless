@@ -25,11 +25,11 @@ serverless deploy
 ```
 
 ### Estrutura do projeto
-  /tech-talk-serverless
-  |--- node_modules/                            <-- gerada com o npm install
-  |---/src
-      |---/adapters
-          |--- create-pix.js                    <-- handler do Lambda de criar pix
-          |--- mercado-pago-payment-service.js  <-- serviço que comunica com a API de pagamentos do Mercado Pago
-  |--- package.json                             <-- define os scripts e dependências
-  |--- serverless.yml                           <-- define as configurações do serverless framework
+    /tech-talk-serverless
+    |--- node_modules/                            <-- gerada com o npm install
+    |---/src
+        |---/adapters
+            |--- create-pix.js                    <-- handler do Lambda de criar pix
+            |--- mercado-pago-payment-service.js  <-- serviço que comunica com a API de pagamentos do Mercado Pago
+    |--- package.json                             <-- define os scripts e dependências
+    |--- serverless.yml                           <-- define as configurações do serverless framework
